@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎁 Kado Buat Obet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onclick="startMusic();">
+
+  <audio id="bg-music" autoplay loop>
+    <source src="ulangtahun.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="loader" id="loader">
+    <p>🎁 Lagi dibungkus kado spesial buat kamu...</p>
+  </div>
+
+  <div class="container" id="content" style="display: none;">
+    <div id="story">
+      <p id="textDisplay"></p>
+    </div>
+    <button id="nextBtn" onclick="nextText()">Terus terus🌟</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
